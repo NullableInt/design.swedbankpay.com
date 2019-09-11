@@ -29,7 +29,7 @@ module.exports = (env, argv) => {
         entry: {
             dg: ["@babel/polyfill", "./src/scripts/main/index.js"],
             "dg-dashboard": "./src/scripts/dashboard/index.js",
-            app: ["@babel/polyfill/noConflict", `./src/${brand}.js`]
+            app: ["@babel/polyfill/noConflict", "./src/index.js"]
         },
         resolve: {
             extensions: [".js", ".jsx", ".json"]

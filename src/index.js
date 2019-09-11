@@ -5,11 +5,16 @@ import App from "./App";
 import "prismjs";
 import "prismjs/themes/prism.css";
 
-import "./less/swedbankpay.less";
-import "./less/documentation-swedbankpay.less";
+import "./less/payex.less";
+
+const { brand } = process.env;
+
+const style = async () => await import(`./less/documentation-${brand}.less`);
+
+console.log("style:: ", style); // <-- returns a function?
 
 render(
-    <App />,
+    <App style />,
     document.getElementById("designguide")
 );
 
