@@ -11,6 +11,7 @@ const styleUrl = `https://design.${brand}.com${BASENAME}styles/dg-style.css`;
 
 const QuickStart = () => (
     <>
+        <h1>Wow this is a cool branch!</h1>
         <h2 id="quick-start">Quick start</h2>
         <p>To quickly add the {brandTitle} DesignGuide to your project, include the snippets below in your project.</p>
     </>
