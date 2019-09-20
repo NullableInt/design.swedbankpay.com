@@ -73,6 +73,9 @@ exports[`GettingStarted: Introduction JavaScript renders 1`] = `
 
 exports[`GettingStarted: Introduction QuickStart renders 1`] = `
 <Fragment>
+  <h1>
+    Wow this is a cool branch!
+  </h1>
   <h2
     id="quick-start"
   >
