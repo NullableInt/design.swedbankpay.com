@@ -62,7 +62,7 @@ class SelectPanel extends Component {
 
     render () {
         return (
-            <div id="doc-sidebar" className="sidebar">
+            <div id="doc-sidebar" className="sidebar sidebar-topbar-sticky">
                 {/* A fully functional search box will be added later. */}
                 {/* <SearchBox routes={this.props.routes} /> */}
                 <nav className="sidebar-nav">

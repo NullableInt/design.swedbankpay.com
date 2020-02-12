@@ -9,7 +9,7 @@ const basename = process.env.basename;
 const brand = process.env.brand;
 
 const AppHeader = () => (
-    <header className="topbar topbar-md-wide designguide-header">
+    <header className="topbar topbar-md-wide topbar-sticky designguide-header">
         <button type="button" className="topbar-btn">
             <i className="material-icons topbar-btn-icon">menu</i>
         </button>
