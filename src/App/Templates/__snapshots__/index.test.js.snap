@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Resources: index renders 1`] = `
+exports[`Templates: index renders 1`] = `
 <div
   className="documentation"
 >
@@ -14,33 +14,28 @@ exports[`Resources: index renders 1`] = `
         routes={
           Array [
             Object {
-              "path": "/res/getting-started",
-              "redirect": "/res/getting-started/introduction",
+              "path": "/tmpl/getting-started",
+              "redirect": "/tmpl/getting-started/introduction",
               "routes": Array [
                 Object {
                   "componentPath": "getting-started/Introduction",
-                  "path": "/res/getting-started/introduction",
+                  "path": "/tmpl/getting-started/introduction",
                   "title": "Introduction",
                 },
               ],
               "title": "Getting Started",
             },
             Object {
-              "path": "/res/resources",
-              "redirect": "/res/resources/logotype",
+              "path": "/tmpl/templates",
+              "redirect": "/tmpl/templates/presentations",
               "routes": Array [
                 Object {
-                  "componentPath": "resources/logotype",
-                  "path": "/res/resources/logotype",
-                  "title": "Logotype",
-                },
-                Object {
-                  "componentPath": "resources/typography",
-                  "path": "/res/resources/typography",
-                  "title": "Typography",
+                  "componentPath": "templates/presentations",
+                  "path": "/tmpl/templates/presentations",
+                  "title": "Presentations",
                 },
               ],
-              "title": "Resources",
+              "title": "Templates",
             },
           ]
         }
@@ -55,19 +50,19 @@ exports[`Resources: index renders 1`] = `
         <Switch>
           <Route
             exact={true}
-            path="/res"
+            path="/tmpl"
             render={[Function]}
           />
           <RenderRoutes
-            appFolder="Resources"
+            appFolder="Templates"
             key="renderRoutes_Getting Started"
-            path="/res/getting-started"
-            redirect="/res/getting-started/introduction"
+            path="/tmpl/getting-started"
+            redirect="/tmpl/getting-started/introduction"
             routes={
               Array [
                 Object {
                   "componentPath": "getting-started/Introduction",
-                  "path": "/res/getting-started/introduction",
+                  "path": "/tmpl/getting-started/introduction",
                   "title": "Introduction",
                 },
               ]
@@ -75,28 +70,23 @@ exports[`Resources: index renders 1`] = `
             title="Getting Started"
           />
           <RenderRoutes
-            appFolder="Resources"
-            key="renderRoutes_Resources"
-            path="/res/resources"
-            redirect="/res/resources/logotype"
+            appFolder="Templates"
+            key="renderRoutes_Templates"
+            path="/tmpl/templates"
+            redirect="/tmpl/templates/presentations"
             routes={
               Array [
                 Object {
-                  "componentPath": "resources/logotype",
-                  "path": "/res/resources/logotype",
-                  "title": "Logotype",
-                },
-                Object {
-                  "componentPath": "resources/typography",
-                  "path": "/res/resources/typography",
-                  "title": "Typography",
+                  "componentPath": "templates/presentations",
+                  "path": "/tmpl/templates/presentations",
+                  "title": "Presentations",
                 },
               ]
             }
-            title="Resources"
+            title="Templates"
           />
           <Redirect
-            from="/res/*"
+            from="/tmpl/*"
             to="/404"
           />
         </Switch>

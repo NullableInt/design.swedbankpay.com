@@ -24,19 +24,9 @@ module.exports = [
         redirect: "/res/resources/logotype",
         routes: [
             {
-                title: "Images",
-                path: "/res/resources/images",
-                componentPath: "resources/images"
-            },
-            {
                 title: "Logotype",
                 path: "/res/resources/logotype",
                 componentPath: "resources/logotype"
-            },
-            {
-                title: "Presentations",
-                path: "/res/resources/presentations",
-                componentPath: "resources/presentations"
             },
             {
                 title: "Typography",
